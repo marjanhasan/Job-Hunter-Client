@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "companyLogo": "https://cdn-icons-png.flaticon.com/512/5968/5968863.png",
+    "jobTitle": "Senior Software Engineer",
+    "companyName": "Google",
+    "remoteOrOnsite": "Remote",
+    "location": "Anywhere",
+    "fulltimeOrParttime": "Full-time",
+    "salary": "$150,000 - $200,000 per year",
+    "jobDescription": "We are looking for a talented Senior Software Engineer to join our team.",
+    "jobResponsibility": "Design, develop, and maintain software applications using a variety of technologies.",
+    "educationalRequirements": "Bachelor's degree in Computer Science or related field.",
+    "experiences": "5+ years of experience in software engineering.",
+    "contactInformation": {
+      "phone": "+1 (555) 123-4567",
+      "email": "jobs@abccorp.com"
+    }
+  },
+  {
+    "id": 2,
+    "companyLogo": "https://cdn-icons-png.flaticon.com/512/733/733547.png",
+    "jobTitle": "Marketing Manager",
+    "companyName": "Facebook",
+    "remoteOrOnsite": "Onsite",
+    "location": "San Francisco, CA",
+    "fulltimeOrParttime": "Full-time",
+    "salary": "$120,000 - $150,000 per year",
+    "jobDescription": "We are looking for an experienced Marketing Manager to join our team.",
+    "jobResponsibility": "Develop and implement marketing strategies to drive customer acquisition and retention.",
+    "educationalRequirements": "Bachelor's degree in Marketing or related field.",
+    "experiences": "5+ years of experience in marketing or related field.",
+    "contactInformation": {
+      "phone": "+1 (555) 123-4567",
+      "email": "jobs@xyzcompany.com"
+    }
+  },
+  {
+    "id": 3,
+    "companyLogo": "https://cdn-icons-png.flaticon.com/512/732/732221.png",
+    "jobTitle": "Product Designer",
+    "companyName": "Microsoft",
+    "remoteOrOnsite": "Onsite",
+    "location": "New York, NY",
+    "fulltimeOrParttime": "Full-time",
+    "salary": "$80,000 - $100,000 per year",
+    "jobDescription": "We are seeking a talented Product Designer to help us design beautiful and intuitive products.",
+    "jobResponsibility": "Design user interfaces and experiences for web and mobile applications.",
+    "educationalRequirements": "Bachelor's degree in Graphic Design or related field.",
+    "experiences": "3+ years of experience in product design or related field.",
+    "contactInformation": {
+      "phone": "+1 (555) 123-4567",
+      "email": "jobs@designco.com"
+    }
+  },
+  {
+    "id": 4,
+    "companyLogo": "https://cdn-icons-png.flaticon.com/512/0/747.png",
+    "jobTitle": "Frontend Developer",
+    "companyName": "Apple",
+    "remoteOrOnsite": "Onsite",
+    "location": "Seattle, WA",
+    "fulltimeOrParttime": "Full-time",
+    "salary": "$90,000 - $120,000 per year",
+    "jobDescription": "We are seeking a talented Frontend Developer to help us build amazing web applications.",
+    "jobResponsibility": "Develop and maintain web applications using HTML, CSS, and JavaScript.",
+    "educationalRequirements": "Bachelor's degree in Computer Science or related field.",
+    "experiences": "3+ years of experience in frontend development or related field.",
+    "contactInformation": {
+      "phone": "+1 (555) 123-4567",
+      "email": "jobs@webdevco.com"
+    }
+  },
+  {
+    "id": 5,
+    "companyLogo": "https://cdn-icons-png.flaticon.com/512/5968/5968863.png",
+    "jobTitle": "Data Scientist",
+    "companyName": "Google",
+    "remoteOrOnsite": "Remote",
+    "location": "Anywhere",
+    "fulltimeOrParttime": "Full-time",
+    "salary": "$120,000 - $150,000 per year",
+    "jobDescription": "We are seeking a talented data scientist to join our team and help us extract valuable insights from data.",
+    "jobResponsibility": "Develop statistical models and algorithms to analyze complex data sets and extract insights.",
+    "educationalRequirements": "Master's or PhD in Computer Science, Statistics, Mathematics, or related field.",
+    "experiences": "5+ years of experience in data science or related field.",
+    "contactInformation": {
+      "phone": "+1 (555) 123-4567",
+      "email": "jobs@dataanalytics.com"
+    }
+  },
+  {
+    "id": 6,
+    "companyLogo": "https://cdn-icons-png.flaticon.com/512/5968/5968863.png",
+    "jobTitle": "Marketing Manager",
+    "companyName": "Google",
+    "remoteOrOnsite": "Onsite",
+    "location": "San Francisco, CA",
+    "fulltimeOrParttime": "Full-time",
+    "salary": "$100,000 - $120,000 per year",
+    "jobDescription": "We are seeking a talented Marketing Manager to help us create and execute marketing strategies for our clients.",
+    "jobResponsibility": "Develop and execute marketing strategies for clients across a variety of industries.",
+    "educationalRequirements": "Bachelor's degree in Marketing or related field.",
+    "experiences": "5+ years of experience in marketing or related field.",
+    "contactInformation": {
+      "phone": "+1 (555) 123-4567",
+      "email": "jobs@marketingagency.com"
+    }
+  }
+]

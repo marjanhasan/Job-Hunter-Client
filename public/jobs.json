@@ -1,0 +1,22 @@
+[
+  {
+    "logo": "https://cdn-icons-png.flaticon.com/512/3206/3206042.png",
+    "name": "Technology",
+    "jobsAvailable": 250
+  },
+  {
+    "logo": "https://cdn-icons-png.flaticon.com/512/438/438506.png",
+    "name": "Finance",
+    "jobsAvailable": 150
+  },
+  {
+    "logo": "https://cdn-icons-png.flaticon.com/512/1998/1998087.png",
+    "name": "Marketing",
+    "jobsAvailable": 100
+  },
+  {
+    "logo": "https://cdn-icons-png.flaticon.com/512/2849/2849198.png",
+    "name": "Education",
+    "jobsAvailable": 75
+  }
+]

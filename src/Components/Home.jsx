@@ -1,9 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import JobCategory from "./JobCategory";
 
 const Home = () => {
   return (
     <div>
+      {/* banner section  */}
       <div className="bg-gray-100">
         <div className="my-container flex flex-col items-center justify-between lg:flex-row h-full">
           {/* left side  */}
@@ -31,7 +33,7 @@ const Home = () => {
           <div className="lg:w-1/2">
             <div className="w-full lg:w-4/5 lg:ml-auto m-auto lg:h-[80%]">
               <img
-                src="pngwing.com.png"
+                src="banner.png"
                 alt=""
                 className="object-fill h-[80%] w-full"
               />
@@ -39,6 +41,8 @@ const Home = () => {
           </div>
         </div>
       </div>
+      {/* job category section  */}
+      <JobCategory></JobCategory>
     </div>
   );
 };

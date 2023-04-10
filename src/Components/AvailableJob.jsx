@@ -1,8 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { MapPinIcon, CurrencyDollarIcon } from "@heroicons/react/24/solid";
 
 const AvailableJob = ({ job }) => {
+  const navigate = useNavigate();
   const {
     companyLogo,
     jobTitle,
@@ -11,6 +12,7 @@ const AvailableJob = ({ job }) => {
     fulltimeOrParttime,
     location,
     salary,
+    id,
   } = job;
   return (
     <div className="border p-8 rounded-md">
@@ -37,11 +39,12 @@ const AvailableJob = ({ job }) => {
           {salary}
         </p>
       </div>
-      <Link to="/" className="btn md:w-auto md:mr-4 mt-6">
-        <div className="inline-flex items-center justify-center w-full h-full">
-          <p className="mr-3">Visit Details</p>
-        </div>
-      </Link>
+      <button
+        onClick={() => navigate(`/jobdetails/${id}`)}
+        className="btn mt-6"
+      >
+        Visit Details
+      </button>
     </div>
   );
 };

@@ -12,10 +12,8 @@
     "jobResponsibility": "Design, develop, and maintain software applications using a variety of technologies.",
     "educationalRequirements": "Bachelor's degree in Computer Science or related field.",
     "experiences": "5+ years of experience in software engineering.",
-    "contactInformation": {
-      "phone": "+1 (555) 123-4567",
-      "email": "jobs@abccorp.com"
-    }
+    "phone": "+1 (555) 123-4567",
+    "email": "jobs@abccorp.com"
   },
   {
     "id": 2,
@@ -30,10 +28,8 @@
     "jobResponsibility": "Develop and implement marketing strategies to drive customer acquisition and retention.",
     "educationalRequirements": "Bachelor's degree in Marketing or related field.",
     "experiences": "5+ years of experience in marketing or related field.",
-    "contactInformation": {
-      "phone": "+1 (555) 123-4567",
-      "email": "jobs@xyzcompany.com"
-    }
+    "phone": "+1 (555) 123-4567",
+    "email": "jobs@xyzcompany.com"
   },
   {
     "id": 3,
@@ -48,10 +44,8 @@
     "jobResponsibility": "Design user interfaces and experiences for web and mobile applications.",
     "educationalRequirements": "Bachelor's degree in Graphic Design or related field.",
     "experiences": "3+ years of experience in product design or related field.",
-    "contactInformation": {
-      "phone": "+1 (555) 123-4567",
-      "email": "jobs@designco.com"
-    }
+    "phone": "+1 (555) 123-4567",
+    "email": "jobs@designco.com"
   },
   {
     "id": 4,
@@ -66,10 +60,8 @@
     "jobResponsibility": "Develop and maintain web applications using HTML, CSS, and JavaScript.",
     "educationalRequirements": "Bachelor's degree in Computer Science or related field.",
     "experiences": "3+ years of experience in frontend development or related field.",
-    "contactInformation": {
-      "phone": "+1 (555) 123-4567",
-      "email": "jobs@webdevco.com"
-    }
+    "phone": "+1 (555) 123-4567",
+    "email": "jobs@webdevco.com"
   },
   {
     "id": 5,
@@ -84,10 +76,8 @@
     "jobResponsibility": "Develop statistical models and algorithms to analyze complex data sets and extract insights.",
     "educationalRequirements": "Master's or PhD in Computer Science, Statistics, Mathematics, or related field.",
     "experiences": "5+ years of experience in data science or related field.",
-    "contactInformation": {
-      "phone": "+1 (555) 123-4567",
-      "email": "jobs@dataanalytics.com"
-    }
+    "phone": "+1 (555) 123-4567",
+    "email": "jobs@dataanalytics.com"
   },
   {
     "id": 6,
@@ -102,9 +92,7 @@
     "jobResponsibility": "Develop and execute marketing strategies for clients across a variety of industries.",
     "educationalRequirements": "Bachelor's degree in Marketing or related field.",
     "experiences": "5+ years of experience in marketing or related field.",
-    "contactInformation": {
-      "phone": "+1 (555) 123-4567",
-      "email": "jobs@marketingagency.com"
-    }
+    "phone": "+1 (555) 123-4567",
+    "email": "jobs@marketingagency.com"
   }
 ]

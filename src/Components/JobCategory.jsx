@@ -4,7 +4,7 @@ import JobCategoryCard from "./JobCategoryCard";
 const JobCategory = () => {
   const [info, setInfo] = useState([]);
   useEffect(() => {
-    fetch("jobCategory.json")
+    fetch("/jobCategory.json")
       .then((res) => res.json())
       .then((data) => setInfo(data));
   }, []);

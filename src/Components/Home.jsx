@@ -1,8 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 import JobCategory from "./JobCategory";
+import AvailableJobs from "./AvailableJobs";
 
 const Home = () => {
+  const jobs = useLoaderData();
   return (
     <div>
       {/* banner section  */}
@@ -41,8 +43,10 @@ const Home = () => {
           </div>
         </div>
       </div>
-      {/* job category section  */}
+      {/* Available job category section  */}
       <JobCategory></JobCategory>
+      {/* Available job lists  */}
+      <AvailableJobs jobs={jobs}></AvailableJobs>
     </div>
   );
 };

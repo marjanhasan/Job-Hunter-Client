@@ -8,10 +8,11 @@ const JobCategory = () => {
       .then((res) => res.json())
       .then((data) => setInfo(data));
   }, []);
-  //   console.log(info);
   return (
     <div className="mt-6 md:mt-12">
-      <h1 className="text-center text-5xl font-semibold">Job Category List</h1>
+      <h1 className="text-center text-3xl md:text-5xl font-semibold">
+        Available Jobs Category
+      </h1>
       <p className="text-center text-base text-gray-500 md:text-lg mt-4">
         Explore thousands of job opportunities with all the information you
         need. Its your future

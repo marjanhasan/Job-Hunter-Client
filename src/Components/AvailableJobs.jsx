@@ -3,7 +3,7 @@ import AvailableJob from "./AvailableJob";
 
 const AvailableJobs = ({ jobs }) => {
   return (
-    <div>
+    <div className="mt-6 md:mt-12">
       <h1 className="text-center text-3xl md:text-5xl font-semibold">
         Available Jobs Lists
       </h1>

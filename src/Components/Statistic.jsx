@@ -1,41 +1,55 @@
 import React from "react";
 import {
-  LineChart,
+  ComposedChart,
   Line,
+  Bar,
   XAxis,
   YAxis,
   CartesianGrid,
   Tooltip,
+  Legend,
   ResponsiveContainer,
 } from "recharts";
 const data = [
   {
-    name: "Assignment 1",
-    marks: 60,
+    name: "A-1",
+    total: 60,
+    score: 60,
   },
   {
-    name: "Assignment 2",
-    marks: 60,
+    name: "A-2",
+    total: 60,
+    score: 60,
   },
   {
-    name: "Assignment 3",
-    marks: 55,
+    name: "A-3",
+    total: 60,
+    score: 60,
   },
   {
-    name: "Assignment 4",
-    marks: 60,
+    name: "A-4",
+    total: 60,
+    score: 60,
   },
   {
-    name: "Assignment 5",
-    marks: 58,
+    name: "A-5",
+    total: 60,
+    score: 58,
   },
   {
-    name: "Assignment 6",
-    marks: 45,
+    name: "A-6",
+    total: 60,
+    score: 60,
   },
   {
-    name: "Assignment 7",
-    marks: 51,
+    name: "A-7",
+    total: 60,
+    score: 60,
+  },
+  {
+    name: "A-8",
+    total: 60,
+    score: 60,
   },
 ];
 const Statistic = () => {
@@ -45,31 +59,27 @@ const Statistic = () => {
         Statistics
       </div>
       <h2 className="font-bold text-4xl my-5 text-center">Assignment Marks</h2>
-      <div style={{ width: "100%", height: 300 }}>
-        <ResponsiveContainer width="100%" height={200}>
-          <LineChart
+      <div className="h-[400px] mx-auto">
+        <ResponsiveContainer width="100%" height="100%">
+          <ComposedChart
             width={500}
-            height={200}
+            height={400}
             data={data}
-            syncId="anyId"
             margin={{
-              top: 10,
-              right: 30,
-              left: 0,
-              bottom: 0,
+              top: 20,
+              right: 20,
+              bottom: 20,
+              left: 20,
             }}
           >
-            <CartesianGrid strokeDasharray="3 3" />
-            <XAxis dataKey="name" />
+            <CartesianGrid stroke="#f5f5f5" />
+            <XAxis dataKey="name" scale="band" />
             <YAxis />
             <Tooltip />
-            <Line
-              type="monotone"
-              dataKey="marks"
-              stroke="#8884d8"
-              fill="#8884d8"
-            />
-          </LineChart>
+            <Legend />
+            <Bar dataKey="score" barSize={20} fill="#413ea0" />
+            <Line type="monotone" dataKey="total" stroke="#ff7300" />
+          </ComposedChart>
         </ResponsiveContainer>
       </div>
     </div>

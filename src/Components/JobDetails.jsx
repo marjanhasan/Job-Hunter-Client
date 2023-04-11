@@ -7,6 +7,7 @@ import {
   PhoneIcon,
   EnvelopeIcon,
 } from "@heroicons/react/24/solid";
+import { addToDb } from "../utilities/fakedb";
 
 const JobDetails = () => {
   const dynamic = useParams();
@@ -24,6 +25,7 @@ const JobDetails = () => {
   });
   const {
     jobDescription,
+    id,
     jobResponsibility,
     educationalRequirements,
     experiences,
@@ -33,6 +35,10 @@ const JobDetails = () => {
     jobTitle,
     location,
   } = final;
+  const applyBtn = (id) => {
+    console.log("clicked");
+    addToDb(id);
+  };
   return (
     <div>
       <div className="bg-gray-100 h-64 mb-16 text-4xl font-bold tracking-wide flex justify-center items-center">
@@ -40,20 +46,22 @@ const JobDetails = () => {
       </div>
       <div className="my-container grid md:grid-cols-3 gap-5">
         <div className="md:col-span-2">
-          <p>
-            <span>Job Description: </span>
+          <p className="mb-6 text-justify text-base text-gray-500 md:text-lg">
+            <span className="font-bold text-black">Job Description: </span>
             {jobDescription}
           </p>
-          <p>
-            <span>Job Responsibilities: </span>
+          <p className="mb-6 text-justify text-base text-gray-500 md:text-lg">
+            <span className="font-bold text-black">Job Responsibilities: </span>
             {jobResponsibility}
           </p>
-          <p>
-            <span>Educational Requirements: </span>
+          <p className="mb-6 text-justify text-base text-gray-500 md:text-lg">
+            <span className="font-bold text-black">
+              Educational Requirements:{" "}
+            </span>
             {educationalRequirements}
           </p>
-          <p>
-            <span>Experiences: </span>
+          <p className="mb-6 text-justify text-base text-gray-500 md:text-lg">
+            <span className="font-bold text-black">Experiences: </span>
             {experiences}
           </p>
         </div>
@@ -85,7 +93,10 @@ const JobDetails = () => {
                 {location}
               </p>
             </div>
-            <button className="btn w-full flex justify-center mt-6">
+            <button
+              onClick={() => applyBtn(id)}
+              className="btn w-full flex justify-center mt-6"
+            >
               Apply Now
             </button>
           </div>

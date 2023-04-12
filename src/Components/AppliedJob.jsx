@@ -1,12 +1,18 @@
 import React, { useState } from "react";
 import { getShoppingCart } from "../utilities/fakedb";
 import { useLoaderData } from "react-router-dom";
-import { MapPinIcon, CurrencyDollarIcon } from "@heroicons/react/24/solid";
+import {
+  MapPinIcon,
+  CurrencyDollarIcon,
+  ChevronDownIcon,
+} from "@heroicons/react/24/solid";
 import { Link } from "react-router-dom";
 
 const AppliedJob = () => {
   const jobs = useLoaderData();
   const [onSite, setOnSite] = useState(false);
+  const [remote, setRemote] = useState(false);
+  const [filter, setFilter] = useState(false);
   const localData = getShoppingCart();
   const localId = Object.keys(localData);
   let exists = [];
@@ -28,14 +34,53 @@ const AppliedJob = () => {
       setCh([...exists]);
     }
   };
-  console.log(cH);
+  const handleRemote = (clicked) => {
+    setRemote(clicked);
+    if (!remote) {
+      let final = exists.filter((exist) => exist.remoteOrOnsite == "Remote");
+      setCh([...final]);
+    } else {
+      setCh([...exists]);
+    }
+  };
+  const filterBtn = (clicked) => {
+    setFilter(clicked);
+  };
   return (
-    <div>
+    <div className="">
       <div className="bg-gray-100 h-64 mb-16 text-4xl font-bold tracking-wide flex justify-center items-center">
         Applied Jobs
       </div>
-      <h1>applied</h1>
-      <div className="mx-auto w-3/4">
+      <div className="my-container">
+        <div className="flex justify-end relative">
+          <span
+            onClick={() => filterBtn(!filter)}
+            className="inline-flex items-center h-12 px-6 mb-3 font-medium text-black bg-gray-100 rounded shadow-md  md:mb-0 cursor-pointer "
+          >
+            Filter By{" "}
+            <ChevronDownIcon
+              className={`w-5 ml-1 transition duration-300 ${
+                filter ? `rotate-180` : `rotate-0`
+              }`}
+            />
+          </span>
+          {filter && (
+            <div className="absolute -right-1 top-10 flex flex-col bg-gray-100 pl-6 pr-14 pb-2 rounded-b-lg">
+              <button
+                onClick={() => handleRemote(!remote)}
+                className="cursor-pointer my-2 text-gray-500 font-medium"
+              >
+                Remote
+              </button>
+              <button
+                onClick={() => handleOnSite(!onSite)}
+                className="cursor-pointer my-2 text-gray-500 font-medium"
+              >
+                Onsite
+              </button>
+            </div>
+          )}
+        </div>
         {cH.map((job) => (
           <div>
             <div className="border-2 shadow-lg border-gray-200 rounded-lg my-4 lg:my-8 flex flex-col lg:flex-row items-center justify-between py-4 lg:py-8 px-4 gap-2">
@@ -79,10 +124,6 @@ const AppliedJob = () => {
           </div>
         ))}
       </div>
-      <button onClick={() => handleOnSite(!onSite)} className="btn">
-        onsite
-      </button>
-      <button>remote</button>
     </div>
   );
 };

@@ -7,7 +7,7 @@ const addToDb = (id) => {
     shoppingCart[id] = 1;
   } else {
     Toastify({
-      text: "This is a toast",
+      text: "Already applied to this job!",
       duration: 3000,
     }).showToast();
   }

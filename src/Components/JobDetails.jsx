@@ -7,11 +7,12 @@ import {
   PhoneIcon,
   EnvelopeIcon,
 } from "@heroicons/react/24/solid";
-import { addToDb } from "../utilities/fakedb";
+import { addToDb, getShoppingCart } from "../utilities/fakedb";
 
 const JobDetails = () => {
   const dynamic = useParams();
   const [jd, setJd] = useState([]);
+  const [clicked, setClicked] = useState(0);
   let final = {};
   useEffect(() => {
     fetch("/jobsDetails.json")
@@ -36,9 +37,18 @@ const JobDetails = () => {
     location,
   } = final;
   const applyBtn = (id) => {
-    console.log("clicked");
     addToDb(id);
+    setClicked(clicked + 1);
   };
+  useEffect(() => {
+    let click = getShoppingCart();
+    const clickedId = Object.keys(click);
+    clickedId.find((singleId) => {
+      if (singleId == dynamic.id) {
+        setClicked(parseInt(singleId));
+      }
+    });
+  }, []);
   return (
     <div>
       <div className="bg-gray-100 h-64 mb-16 text-4xl font-bold tracking-wide flex justify-center items-center">
@@ -95,7 +105,9 @@ const JobDetails = () => {
             </div>
             <button
               onClick={() => applyBtn(id)}
-              className="btn w-full flex justify-center mt-6"
+              className={`w-full flex justify-center mt-6 ${
+                clicked ? "btn-clicked" : "btn"
+              }`}
             >
               Apply Now
             </button>

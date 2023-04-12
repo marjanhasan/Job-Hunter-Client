@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { getFromDb } from "../utilities/fakedb";
+import { getShoppingCart } from "../utilities/fakedb";
 import { useLoaderData } from "react-router-dom";
 import {
   MapPinIcon,
@@ -13,7 +13,7 @@ const AppliedJob = () => {
   const [onSite, setOnSite] = useState(false);
   const [remote, setRemote] = useState(false);
   const [filter, setFilter] = useState(false);
-  const localData = getFromDb();
+  const localData = getShoppingCart();
   const localId = Object.keys(localData);
   let exists = [];
   localId.map((lid) => {

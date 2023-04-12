@@ -13,8 +13,8 @@ const Footer = () => {
               </span>
             </Link>
             <p className="text-base text-gray-500 md:text-lg mt-3">
-              There are many variations of passages of Lorem Ipsum , but the
-              majority have suffered alteration in some form.
+              Discover the latest job openings from top companies and connect
+              with hiring managers.
             </p>
             <div className="flex justify-center md:justify-start gap-2 mt-2">
               <img
@@ -79,8 +79,8 @@ const Footer = () => {
         </div>
         <hr className="bg-gray-50 mt-12" />
         <div className="flex flex-col md:flex-row md:justify-between justify-start mt-6 text-base text-gray-500 md:text-lg ">
-          <span>@2023 CareerHub. All Rights Reserved</span>
-          <span>Powered by CareerHub</span>
+          <span>@2023 Job-Hunter. All Rights Reserved</span>
+          <span>Powered by Job-Hunter</span>
         </div>
       </div>
     </div>

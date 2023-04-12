@@ -14,8 +14,8 @@ const JobCategory = () => {
         Available Jobs Category
       </h1>
       <p className="text-center text-base text-gray-500 md:text-lg mt-4">
-        Explore thousands of job opportunities with all the information you
-        need. Its your future
+        Discover the latest job openings from top companies and connect with
+        hiring managers.
       </p>
       <div className="my-container grid md:grid-cols-2 lg:grid-cols-4 gap-3 mt-8">
         {info.map((singleInfo, i) => (

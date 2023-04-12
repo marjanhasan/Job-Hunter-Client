@@ -14,15 +14,19 @@ const Home = () => {
           <div className="mb-10 lg:max-w-lg lg:pr-5 lg:mb-0">
             <div className="max-w-xl mb-6 lg:mt-8">
               <h2 className="max-w-lg mb-6 font-sans lg:text-6xl font-bold tracking-tight text-gray-900 text-4xl sm:text-5xl sm:leading-none">
-                One Step <br className="hidden md:block" /> Closer To Your
+                Career Connect: <br className="hidden md:block" /> Your Gateway
+                to
                 <br />
-                <span className="inline-block txt-color">Dream Job</span>
+                <span className="inline-block txt-color">
+                  Job Opportunities
+                </span>
               </h2>
               <p className="text-base text-gray-500 md:text-lg">
-                Books are a uniquely portable magic. Books serve to show a man
-                that those original thoughts of his aren't very new after all.
-                The man who does not read good books is no better than the man
-                who can't.
+                Find your dream job with Career Connect! Discover the latest job
+                openings from top companies and connect with hiring managers.
+                Get expert advice on job search strategies, resume writing, and
+                interview tips to land your next job. Sign up now and start your
+                journey to a successful career!
               </p>
               <Link to="/blog" className="btn md:w-auto md:mr-4 mt-6">
                 <div className="inline-flex items-center justify-center w-full h-full">

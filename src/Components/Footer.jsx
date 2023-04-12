@@ -35,7 +35,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="flex flex-col items-center">
-            <div className="">
+            <div className="text-center md:text-left">
               <h2 className="font-bold text-xl mb-3 text-white">Company</h2>
               <p className="text-base text-gray-500 md:text-lg">About Us</p>
               <p className="text-base text-gray-500 md:text-lg">Work</p>
@@ -44,7 +44,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="flex flex-col items-center">
-            <div className="">
+            <div className="text-center md:text-left">
               <h2 className="font-bold text-xl mb-3 text-white">Product</h2>
               <p className="text-base text-gray-500 md:text-lg">Prototype</p>
               <p className="text-base text-gray-500 md:text-lg">
@@ -55,7 +55,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="flex flex-col items-center">
-            <div className="">
+            <div className="text-center md:text-left">
               <h2 className="font-bold text-xl mb-3 text-white">Support</h2>
               <p className="text-base text-gray-500 md:text-lg">Help Desk</p>
               <p className="text-base text-gray-500 md:text-lg">Sales</p>
@@ -66,7 +66,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="flex flex-col items-center">
-            <div className="">
+            <div className="text-center md:text-left">
               <h2 className="font-bold text-xl mb-3 text-white">Contact</h2>
               <p className="text-base text-gray-500 md:text-lg">
                 524 Broadway , NYC
@@ -78,7 +78,7 @@ const Footer = () => {
           </div>
         </div>
         <hr className="bg-gray-50 mt-12" />
-        <div className="flex flex-col md:flex-row md:justify-between justify-start mt-6 text-base text-gray-500 md:text-lg ">
+        <div className="flex flex-col md:flex-row md:justify-between text-center mt-6 text-base text-gray-500 md:text-lg ">
           <span>@2023 Job-Hunter. All Rights Reserved</span>
           <span>Powered by Job-Hunter</span>
         </div>

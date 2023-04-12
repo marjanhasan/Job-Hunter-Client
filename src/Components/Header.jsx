@@ -49,7 +49,7 @@ const Header = () => {
           </li>
         </ul>
         {/* button section  */}
-        <Link className="hidden lg:flex">
+        <Link to="/statistic" className="hidden lg:flex">
           <button className="btn">Start Applying</button>
         </Link>
         {/* mobile navbar section  */}

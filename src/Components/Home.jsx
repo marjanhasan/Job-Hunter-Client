@@ -24,7 +24,7 @@ const Home = () => {
                 The man who does not read good books is no better than the man
                 who can't.
               </p>
-              <Link to="/" className="btn md:w-auto md:mr-4 mt-6">
+              <Link to="/blog" className="btn md:w-auto md:mr-4 mt-6">
                 <div className="inline-flex items-center justify-center w-full h-full">
                   <p className="">Get Started</p>
                 </div>

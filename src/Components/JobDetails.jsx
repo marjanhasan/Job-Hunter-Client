@@ -109,7 +109,7 @@ const JobDetails = () => {
                 clicked ? "btn-clicked" : "btn"
               }`}
             >
-              Apply Now
+              {clicked ? "Applied" : "Apply Now"}
             </button>
           </div>
         </div>
